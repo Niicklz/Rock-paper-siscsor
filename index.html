@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/reset-min.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Contador-->
+    <div class="container">
+      <div class="game-container">
+        <div class="count">
+          
+          <div class="player-count">
+            <h2>Player</h2>
+            <p id="user-score" class="player-score">0</p>
+          </div>
+          <div class="computer-count">
+            <h2>Computer</h2>
+            <p id="com-score" class="computer-score">0</p>
+          </div>
+        </div>
+
+        <!--Ganador o Perdedor-->
+
+        <div class="result">
+          <h1>Selecciona que quieres jugar!</h1>
+        </div>
+
+        <!--Imagenes que se seleccionaron-->
+
+        <div class="selection">
+          <div class="player-selection">
+            <img id="user-hand-rock" class="user-selection-img" src="/hand.png" alt="" />
+            <img id="user-hand-paper" class="user-selection-img inactive" src="/hand-open.png" alt="">
+            <img id="user-hand-scissor"  class="user-selection-img inactive" src="/scissor-hand.png" alt="">
+          </div>
+          <div class="computer-selection">
+            <img id="com-hand-rock" class="com-selection-img" src="/hand.png" alt="" />
+            <img id="com-hand-paper"class="com-selection-img inactive" src="/hand-open.png" alt="">
+            <img id="com-hand-scissor"class="com-selection-img inactive" src="/scissor-hand.png" alt="">
+          </div>
+        </div>
+
+        <!--Opciones de seleccion-->
+        <div class="options">
+          <div class="rock">
+            <button id="rock" class="rock-option">
+              <img src="/hand-closed.png" alt="" />
+            </button>
+          </div>
+          <div class="paper">
+            <button id="paper" class="paper-option">
+              <img src="/hand-palm.png" alt="" />
+            </button>
+          </div>
+          <div class="scissor">
+            <button id="scissor" class="scissor-option">
+              <img src="/scissor.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>

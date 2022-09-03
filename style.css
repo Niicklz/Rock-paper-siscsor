@@ -1,0 +1,177 @@
+body {
+    min-width: 375px;
+    background-color: #16213E;
+    font-family: 'Anton', sans-serif;
+   
+    
+    
+    
+}
+
+.inactive {
+    display: none;
+}
+.container {
+    width: 100%;
+    
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    
+}
+
+.game-container {
+    width: 70%;
+    height: 650px;
+    background-color: #533483;
+    border-radius: 24px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+/*Contador y resultado*/
+.player-count, .computer-count {
+    width: 90px;
+    height: 70px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    
+    border-radius: 12px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.count {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    text-align: center;
+    color: white;
+}
+
+.result {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    color: white;
+}
+
+h1 {
+    padding: 32px;
+    background-color: gray;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 12px;
+}
+
+.selection {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.com-selection-img, .user-selection-img {
+    
+   width: 200px;
+   height: 200px;
+   object-fit: contain;
+
+    
+   
+        
+}
+
+/*Opciones*/ 
+.rock, .paper, .scissor {
+    width: 90px;
+    height: 90px;
+    
+}
+.options {
+    
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    
+}
+
+.rock-option, .paper-option, .scissor-option {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    
+}
+
+.rock-option:hover, .paper-option:hover, .scissor-option:hover {
+    background-color: gray;
+}
+
+.rock-option:active, .paper-option:active, .scissor-option:active {
+    width: 85px;
+    height: 85px;
+    background-color: white;
+}
+
+.rock-option img, .paper-option img, .scissor-option img {
+    width: 40px;
+    height: 40px;
+    
+}
+
+@media (max-width: 1006px) {
+    .game-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        padding: 12px;
+        margin-bottom: 24px;
+        margin-top: 24px;
+       
+       
+    }
+
+    .com-selection-img, .user-selection-img {
+    
+        width: 100px;
+         
+        
+             
+     }
+
+     .rock-option, .paper-option, .scissor-option {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 32px;
+        border-radius: 12px;
+       
+
+
+     }
+
+     .rock-option img, .paper-option img, .scissor-option img {
+        width: 20px;
+        height: 20px;
+     }
+        
+
+     .rock, .paper, .scissor {
+        width: 56px;
+        height: 56px;
+    }
+     .rock-option:active, .paper-option:active, .scissor-option:active {
+        width: 50px;
+        height: 50px;
+        
+    }
+
+}
+
