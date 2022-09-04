@@ -18,7 +18,7 @@
         <div class="count">
           
           <div class="player-count">
-            <h2>Player</h2>
+            <h2 id="user-name">Player</h2>
             <p id="user-score" class="player-score">0</p>
           </div>
           <div class="computer-count">
@@ -37,32 +37,30 @@
 
         <div class="selection">
           <div class="player-selection">
-            <img id="user-hand-rock" class="user-selection-img" src="/hand.png" alt="" />
-            <img id="user-hand-paper" class="user-selection-img inactive" src="/hand-open.png" alt="">
-            <img id="user-hand-scissor"  class="user-selection-img inactive" src="/scissor-hand.png" alt="">
+            <img id="user-option-img" class="user-selection-img" src="/rock.png" alt="" />
+            
           </div>
           <div class="computer-selection">
-            <img id="com-hand-rock" class="com-selection-img" src="/hand.png" alt="" />
-            <img id="com-hand-paper"class="com-selection-img inactive" src="/hand-open.png" alt="">
-            <img id="com-hand-scissor"class="com-selection-img inactive" src="/scissor-hand.png" alt="">
+            <img id="com-option-img" class="com-selection-img" src="/rock.png" alt="" />
+            
           </div>
         </div>
 
         <!--Opciones de seleccion-->
         <div class="options">
-          <div class="rock">
-            <button id="rock" class="rock-option">
+          <div class="rock" >
+            <button id="rock" data-option="rock" class="rock-option">
               <img src="/hand-closed.png" alt="" />
             </button>
           </div>
           <div class="paper">
-            <button id="paper" class="paper-option">
+            <button id="paper" data-option="paper" class="paper-option">
               <img src="/hand-palm.png" alt="" />
             </button>
           </div>
           <div class="scissor">
-            <button id="scissor" class="scissor-option">
-              <img src="/scissor.png" alt="" />
+            <button id="scissor" data-option="scissor" class="scissor-option">
+              <img src="/scissor-hand.png" alt="" />
             </button>
           </div>
         </div>
